@@ -1,0 +1,79 @@
+/*
+LAYOUT: Two-Column (Right)
+DESCRIPTION: Two-column 960px fixed layout with two sidebars right of content
+*/
+
+body {
+min-width:988px;
+}
+
+#header {
+height:80px;
+margin:0 auto;
+position:relative;
+width:980px;
+}
+
+#access {
+overflow:hidden;
+position:relative;
+}
+
+#main {
+margin:0 auto;
+overflow:hidden;
+position:relative;
+width:980px;
+}
+
+#container {
+float:left;
+width:652px;
+}
+
+#content {
+margin:0 20px 0 0;
+overflow:hidden;
+}
+
+.main-aside {
+float:right;
+position:relative;
+width:316px;
+}
+
+#secondary {
+clear:right;
+}
+
+#footer {
+clear:both;
+margin:30px 0 0;
+}
+
+#subsidiary {
+margin:0 auto;
+overflow:hidden;
+width:988px;
+}
+
+#subsidiary .aside {
+float:left;
+margin:0 20px 0 0;
+width:316px;
+}
+
+#subsidiary #third {
+margin:0;
+}
+
+#siteinfo {
+clear:both;
+margin:0 auto;
+text-align:center;
+width:988px;
+}
+
+#branding,.menu {
+margin:0 auto;
+}

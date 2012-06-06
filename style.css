@@ -1,0 +1,444 @@
+/*   
+Theme Name: chromey
+Theme URI: http://www.tolusonaike.com/chromey
+Description: Chromey is a Thematic child theme for wordpress.
+Author: Tolu Sonaike
+Author URI: http://www.tolusonaike.com/
+Template: thematic
+Version: 1.0
+Tags: Thematic, child theme, chromey
+
+*/
+
+
+/* Apply a basic layout */
+@import url('2c-r-fixed-960px.css');
+
+
+@import url('css/typography.css');
+
+/* Prepare theme for plugins */
+@import url('../thematic/library/styles/plugins.css');
+
+
+/* =Global Elements
+-------------------------------------------------------------- */
+body {
+background:#151515 url(images/back.gif);
+}
+
+#buttons {
+left:100px;
+padding:0.75em 0;
+position:relative;
+top:-125px;
+}
+
+a.button {
+-moz-border-radius:.7em;
+-webkit-border-radius:.7em;
+background:#e8e8e8;
+border-radius:.7em;
+color:#666;
+font-size:13px;
+font-weight:700;
+margin:0 10px 0 0;
+padding:.75em 1.25em;
+text-decoration:none;
+}
+
+a.button:hover,a.button:active {
+color:#FF4B33;
+}
+
+
+/* =Header
+-------------------------------------------------------------- */
+
+#branding {
+position:relative;
+}
+
+#blog-title {
+float:left;
+width:200px;
+}
+
+#branding #searchform {
+position:absolute;
+right:0;
+top:97px;
+z-index:999;
+}
+
+#branding #searchform input {
+border:0;
+font-size:13px;
+line-height:18px;
+padding:10px;
+width:316px;
+}
+
+#access .skip-link,#blog-description,#branding #searchform label,#branding #searchform input#searchsubmit {
+display:none;
+}
+
+/* =Menu
+-------------------------------------------------------------- */
+
+#nav {
+float:right;
+}
+
+.sf-menu {
+float:right;
+line-height:2.5em;
+margin:0;
+padding:0;
+}
+
+.sf-menu a {
+padding:5px 13px;
+text-decoration:none;
+}
+
+.sf-menu .current_page_item a,.sf-menu .current_page_ancestor a,.sf-menu .current_page_parent a {
+border-bottom-color:#fff;
+}
+
+.sf-menu a,.sf-menu a:visited {
+-moz-border-radius:20%;
+background:#E8E8E8 none repeat scroll 0 0;
+color:#666;
+font-size:130%;
+font-weight:700;
+}
+
+.sf-menu li {
+display:inline;
+margin-right:15px;
+}
+
+h2.entry-title a {
+text-decoration:none;
+}
+
+.sf-menu li li {
+background:#fff;
+}
+
+.sf-menu li li li {
+background:#9AAEDB;
+}
+
+.sf-menu li:hover,.sf-menu li.sfHover,.sf-menu a:focus,.sf-menu a:hover,.sf-menu a:active {
+outline:0;
+}
+
+.sf-menu ul {
+border-bottom:1px solid #ccc;
+border-right:1px solid #ccc;
+}
+
+.sf-menu li:hover ul,.sf-menu li.sfHover ul {
+top:32px;
+}
+
+.sf-menu ul ul {
+margin-top:0;
+}
+
+.sf-menu ul a {
+background:#fafafa;
+border-bottom:none;
+}
+
+.sf-menu ul a:hover {
+color:#FF4B33;
+}
+
+.sf-menu .current_page_item a {
+background:#666;
+color:#fff;
+}
+
+#access {
+padding-top:30px;
+}
+
+.author,.meta-sep {
+display:none;
+}
+
+h3.widgettitle {
+background:#000 none repeat scroll 0 0;
+border-bottom:1px solid #2E2E2E;
+margin-bottom:10px;
+padding:10px;
+}
+
+.widgetcontainer {
+background:transparent url(images/inset.gif) bottom repeat-x;
+margin-bottom:20px;
+}
+
+.widgetcontainer ul li a {
+font-size:110%;
+text-decoration:none;
+}
+
+.widgetcontainer ul li {
+padding-bottom:10px;
+}
+
+.widgetcontainer ul,.aside ul {
+list-style-type:none;
+margin:0;
+padding:0;
+}
+
+#primary {
+margin-top:20px;
+}
+
+/* =Content
+-------------------------------------------------------------- */
+
+h1.page-title {
+    margin-top:10px;
+    width:630px
+}
+.search .page-title {
+    display:none;
+}
+
+
+/* =Leader and Front Page Styles
+-------------------------------------------------------------- */
+
+
+#commentform input,#commentform textarea {
+border:0;
+padding:10px;
+}
+
+#commentform input#submit {
+-moz-border-radius:20%;
+background:#e8e8e8;
+font-weight:700;
+}
+
+#leader {
+background:transparent url(images/back.png) repeat-x scroll 0 0;
+border-bottom:1px solid #999;
+border-top:1px solid #999;
+min-height:100px;
+padding:10px 0;
+}
+
+#leader-container {
+margin:0 auto;
+overflow:hidden;
+padding:10px;
+position:relative;
+width:960px;
+}
+
+#leader .entry-title {
+font-size:40px;
+line-height:45px;
+margin-top:-8px;
+padding:0 0 14px;
+width:600px;
+}
+
+#leader .entry-title span {
+font-family:Georgia,serif;
+font-style:italic;
+font-weight:400;
+}
+
+.single #leader .entry-title {
+width:652px;
+}
+
+#leader .entry-meta {
+background:#000 none repeat scroll 0 0;
+border-bottom:2px solid #999;
+height:80px;
+left:20px;
+padding-top:10px;
+position:absolute;
+text-align:center;
+top:100px;
+width:100px;
+}
+
+#leader .entry-meta .month {
+font-size:160%;
+}
+
+#leader .entry-meta .day {
+font-size:300%;
+font-weight:700;
+}
+
+
+/* =Front Page Styles
+-------------------------------------------------------------- */
+
+.page-template-front-page-php #leader {
+height:400px;
+}
+
+.page-template-front-page-php #leader-container {
+-moz-border-radius:1%;
+background:#e8e8e8 none repeat scroll 0 0;
+}
+
+.page-template-front-page-php #feature {
+float:left;
+}
+
+.page-template-front-page-php #feature img {
+float:left;
+margin:-10px 10px 0 -10px;
+}
+
+.page-template-front-page-php #feature-info {
+height:350px;
+width:960px;
+}
+
+.page-template-front-page-php #container,.page-template-front-page-php #content {
+margin:20px 0;
+}
+
+.page-template-front-page-php #container {
+background:#000;
+border-bottom:1px solid #2E2E2E;
+padding:10px;
+width:960px;
+}
+
+.page-template-front-page-php #sub-feature {
+line-height:18px;
+overflow:hidden;
+position:relative;
+}
+
+.page-template-front-page-php #sub-feature p {
+margin:0 0 18px 50px;
+}
+
+.page-template-front-page-php .block {
+float:left;
+width:305px;
+}
+
+#front-block-1,#front-block-2 {
+margin-right:10px;
+}
+
+.page-template-front-page-php .block h3 {
+margin:0 0 30px 50px;
+}
+
+.page-template-front-page-php .block .feat-img {
+float:left;
+margin-left:-5px;
+position:relative;
+}
+
+.page-template-front-page-php .block ul {
+list-style:none;
+margin:0 0 10px 50px;
+padding:0;
+}
+
+.page-template-front-page-php .block ul li {
+margin-bottom:10px;
+}
+
+.page-template-front-page-php #front-block-2 ul li {
+background:transparent url(images/inset.gif) repeat-x scroll center bottom;
+padding:10px 0;
+}
+
+.page-template-front-page-php .block ul li .socialize {
+margin:0 10px -11px 0;
+}
+
+e
+.page-template-front-page-php .block ul li a {
+color:#fff;
+display:block;
+padding:6px 0;
+text-decoration:none;
+}
+
+.page #content {
+margin:20px 20px 0 0;
+overflow:hidden;
+}
+
+.page-template-front-page-php .block ul li a:hover,.page-template-front-page-php .block ul li a:active {
+text-decoration:underline;
+}
+
+.page .entry-content,.single .entry-content {
+padding-top:0;
+}
+
+.post .entry-date {
+position:relative;
+}
+
+#nav-below {
+background:#2e2e2e;
+margin:20px 0;
+padding:15px;
+}
+
+.page-template-front-page-php #front-block-3 ul li a,.page-template-front-page-php #front-block-2 ul li a {
+text-decoration:none;
+}
+
+.post .entry-utility,#nav-above {
+display:none;
+}
+
+/* =Post Styles
+-------------------------------------------------------------- */
+
+.post {
+background:#000;
+border-bottom:1px solid #2e2e2e;
+margin-top:20px;
+padding:20px;
+}
+
+.entry-thumbnail {
+margin:15px 0;
+}
+
+#logo-image {
+float:left;
+margin-top:25px;
+width:200px;
+}
+
+/* =Blog Styles
+-------------------------------------------------------------- */
+.entry-meta {
+position:relative;
+}
+
+div.excerpt {
+background:transparent url(images/excerpt_back.png) repeat scroll 0 0;
+height:50px;
+padding:10px;
+position:absolute;
+top:280px;
+width:940px;
+}
